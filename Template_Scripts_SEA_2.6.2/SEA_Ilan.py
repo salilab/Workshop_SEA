@@ -5,6 +5,7 @@
 # at Andrej Sali group, University of California San Francisco (UCSF)
 #####################################################
 
+from __future__ import print_function
 import IMP
 import RMF
 import IMP.atom
@@ -182,7 +183,7 @@ sampleobjects.append(xl1)
 outputobjects.append(xl1)
 
 sf = IMP.core.RestraintsScoringFunction(IMP.pmi.tools.get_restraint_set(m))
-print "ilan3", sf.evaluate(False)
+print("ilan3", sf.evaluate(False))
 
 #Composite Restraints
 weight = 1.0
