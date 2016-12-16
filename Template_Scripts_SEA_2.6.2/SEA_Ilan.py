@@ -24,46 +24,46 @@ import IMP.pmi.restraints.crosslinking
 import IMP.pmi.restraints.proteomics
 
 def create_rotational_symmetry2(rps, maincopy, copies, rotational_axis=IMP.algebra.Vector3D(0, 0, 1.0),
-				nSymmetry=None, skip_gaussian_in_clones=False):
-        '''
-        The copies must not contain rigid bodies.
-        The symmetry restraints are applied at each leaf.
-        '''
-        from math import pi
-        rps.representation_is_modified = True
-        ncopies = len(copies) + 1
-        main_hiers = IMP.atom.get_leaves(rps.hier_dict[maincopy])
+                                nSymmetry=None, skip_gaussian_in_clones=False):
+    '''
+    The copies must not contain rigid bodies.
+    The symmetry restraints are applied at each leaf.
+    '''
+    from math import pi
+    rps.representation_is_modified = True
+    ncopies = len(copies) + 1
+    main_hiers = IMP.atom.get_leaves(rps.hier_dict[maincopy])
 
-        for k in range(len(copies)):
-		if (nSymmetry is None):
-			rotation_angle = 2.0 * pi / float(ncopies) * float(k + 1)
-		else:
-			if ( k % 2 == 0 ):
-				rotation_angle = 2.0 * pi / float(nSymmetry) * float((k + 2) / 2)
-			else:
-				rotation_angle = -2.0 * pi / float(nSymmetry) * float((k + 1) / 2)
-		rotation3D = IMP.algebra.get_rotation_about_axis(rotational_axis, rotation_angle)
-		sm = IMP.core.TransformationSymmetry(rotation3D)
-		clone_hiers = IMP.atom.get_leaves(rps.hier_dict[copies[k]])
+    for k in range(len(copies)):
+        if (nSymmetry is None):
+            rotation_angle = 2.0 * pi / float(ncopies) * float(k + 1)
+        else:
+            if ( k % 2 == 0 ):
+                rotation_angle = 2.0 * pi / float(nSymmetry) * float((k + 2) / 2)
+            else:
+                rotation_angle = -2.0 * pi / float(nSymmetry) * float((k + 1) / 2)
+        rotation3D = IMP.algebra.get_rotation_about_axis(rotational_axis, rotation_angle)
+        sm = IMP.core.TransformationSymmetry(rotation3D)
+        clone_hiers = IMP.atom.get_leaves(rps.hier_dict[copies[k]])
 
-		lc = IMP.container.ListSingletonContainer(rps.m)
-		for n, p in enumerate(main_hiers):
-		    if (skip_gaussian_in_clones):
-			    if (IMP.core.Gaussian.get_is_setup(p)) \
-					and not (IMP.atom.Fragment.get_is_setup(p) or \
-							 IMP.atom.Residue.get_is_setup(p)):
-				    continue
-		    pc = clone_hiers[n]
-		    IMP.core.Reference.setup_particle(pc.get_particle(), p.get_particle())
-		    lc.add(pc.get_particle().get_index())
+        lc = IMP.container.ListSingletonContainer(rps.m)
+        for n, p in enumerate(main_hiers):
+            if (skip_gaussian_in_clones):
+                if (IMP.core.Gaussian.get_is_setup(p)) \
+                            and not (IMP.atom.Fragment.get_is_setup(p) or \
+                                             IMP.atom.Residue.get_is_setup(p)):
+                    continue
+            pc = clone_hiers[n]
+            IMP.core.Reference.setup_particle(pc.get_particle(), p.get_particle())
+            lc.add(pc.get_particle().get_index())
 
-		    c = IMP.container.SingletonsConstraint(sm, None, lc)
-		    rps.m.add_score_state(c)
-		    print("Completed setting " + str(maincopy) + \
-				  " as a reference for " + str(copies[k]) + \
-				  " by rotating it in " + str(rotation_angle / 2.0 / pi * 360) + \
-				  " degree around the " + str(rotational_axis) + " axis.")
-		rps.m.update()
+            c = IMP.container.SingletonsConstraint(sm, None, lc)
+            rps.m.add_score_state(c)
+            print("Completed setting " + str(maincopy) + \
+                          " as a reference for " + str(copies[k]) + \
+                          " by rotating it in " + str(rotation_angle / 2.0 / pi * 360) + \
+                          " degree around the " + str(rotational_axis) + " axis.")
+        rps.m.update()
 
 ##Input files and parameters
 datadirectory = "../data/"
@@ -152,7 +152,7 @@ sampleobjects.append(representation)
 # Define Scoring Function Components
 #-----------------------------------
 # Excluded Volume Restraint
-ev = IMP.pmi.restraints.stereochemistry.ExcludedVolumeSphere(representation, 
+ev = IMP.pmi.restraints.stereochemistry.ExcludedVolumeSphere(representation,
                                                              resolution=10)
 ev.add_to_model()
 outputobjects.append(ev)
@@ -192,9 +192,9 @@ crd["Npr2_dNpr2_497_615_P"]=[(1,496,"Npr2"),"Npr3"]
 crd["SEA4_dSEA4:931-1038_P"]=[(1,930,"SEA4.1"),(1,930,"SEA4.2"),(1,930,"SEA4.3"),"Seh1.1","Seh1.2","Seh1.3"]
 
 for key in crd:
-    cr=IMP.pmi.restraints.proteomics.ConnectivityRestraint(representation, 
+    cr=IMP.pmi.restraints.proteomics.ConnectivityRestraint(representation,
                                                            crd[key],
-							   resolution=100.0)
+                                                           resolution=100.0)
 
     cr.add_to_model()
     cr.set_label(key)
