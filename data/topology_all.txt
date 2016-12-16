@@ -1,0 +1,160 @@
+|directories|
+|pdb_dir|./|
+|fasta_dir|./|
+
+|topology_dictionary|
+|component_name|domain_name|fasta_fn|fasta_id|pdb_fn|chain|residue_range|pdb_offset|bead_size|em_residues_per_gaussian|
+|Npr2	|Npr2_1		|SeaComplex.fasta	|Npr2	|			|A|  1,  8	|0|10|0|
+|Npr2	|Npr2_2		|SeaComplex.fasta	|Npr2	|Npr2_9-127.pdb		|A|  9,127	|0|10|0|
+|Npr2	|Npr2_3		|SeaComplex.fasta	|Npr2	|			|A|128,256	|0|65|0|
+|Npr2	|Npr2_4		|SeaComplex.fasta	|Npr2	|Npr2_257-327.pdb	|A|257,327	|0|10|0|
+|Npr2	|Npr2_501	|SeaComplex.fasta	|Npr2	|			|A|328,355	|0|28|0|
+|Npr2	|Npr2_502	|SeaComplex.fasta	|Npr2	|			|A|356,430	|0|75|0|
+|Npr2	|Npr2_503	|SeaComplex.fasta	|Npr2	|			|A|431,493	|0|63|0|
+|Npr2	|Npr2_504	|SeaComplex.fasta	|Npr2	|			|A|494,562	|0|69|0|
+|Npr2	|Npr2_6		|SeaComplex.fasta	|Npr2	|Npr2_563-610.pdb	|A|563,610	|0|10|0|
+|Npr2	|Npr2_7		|SeaComplex.fasta	|Npr2	|			|A|611,615	|0|10|0|
+
+|Npr3	|Npr3_1		|SeaComplex.fasta	|Npr3	|Npr3_1-31.pdb 		|A|   1,  31	|0|10|0|
+|Npr3	|Npr3_2		|SeaComplex.fasta	|Npr3	|			|A|  32, 321	|0|97|0|
+|Npr3	|Npr3_3		|SeaComplex.fasta	|Npr3	|Npr3_322-438.pdb	|A| 322, 351	|0|10|0|
+|Npr3	|Npr3_4		|SeaComplex.fasta	|Npr3	|			|A| 352, 399	|0|48|0|
+|Npr3	|Npr3_5		|SeaComplex.fasta	|Npr3	|Npr3_322-438.pdb	|A| 400, 438	|0|10|0|
+|Npr3	|Npr3_6		|SeaComplex.fasta	|Npr3	|			|A| 439, 530	|0|92|0|
+|Npr3	|Npr3_7		|SeaComplex.fasta	|Npr3	|Npr3_531-577.pdb	|A| 531, 577	|0|10|0|
+|Npr3	|Npr3_8		|SeaComplex.fasta	|Npr3	|			|A| 576, 949	|0|93|0|
+|Npr3	|Npr3_9		|SeaComplex.fasta	|Npr3	|Npr3_950-988.pdb	|A| 950, 988	|0|10|0|
+|Npr3	|Npr3_10	|SeaComplex.fasta	|Npr3	|			|A| 989,1082	|0|94|0|
+|Npr3	|Npr3_11	|SeaComplex.fasta	|Npr3	|Npr3_1083-1140.pdb	|A|1083,1140	|0|10|0|
+|Npr3	|Npr3_12	|SeaComplex.fasta	|Npr3	|			|A|1141,1146	|0|10|0|
+
+|Seh1.1	|Seh1.1_2	|SeaComplex.fasta	|Seh1	|3F3F.pdb		|A|1,248	|0|10|0|
+|Seh1.1	|Seh1.1_3	|SeaComplex.fasta	|Seh1	|			|A|249,287	|0|39|0|
+|Seh1.1	|Seh1.1_4	|SeaComplex.fasta	|Seh1	|3F3F.pdb		|A|288,346	|0|10|0|
+|Seh1.1	|Seh1.1_5	|SeaComplex.fasta	|Seh1	|			|A|347,349	|0|10|0|
+
+|Seh1.2 |Seh1.2_2       |SeaComplex.fasta       |Seh1   |3F3F.pdb               |A|1,248        |0|10|0|
+|Seh1.2 |Seh1.2_3       |SeaComplex.fasta       |Seh1   |      			|A|249,287      |0|39|0|
+|Seh1.2 |Seh1.2_4       |SeaComplex.fasta       |Seh1   |3F3F.pdb               |A|288,346      |0|10|0|
+|Seh1.2 |Seh1.2_5       |SeaComplex.fasta       |Seh1   |			|A|347,349      |0|10|0|
+
+|Seh1.3 |Seh1.3_2       |SeaComplex.fasta       |Seh1   |3F3F.pdb               |A|1,248        |0|39|0|
+|Seh1.3 |Seh1.3_3       |SeaComplex.fasta       |Seh1   |			|A|249,287      |0|10|0|
+|Seh1.3 |Seh1.3_4       |SeaComplex.fasta       |Seh1   |3F3F.pdb               |A|288,346      |0|10|0|
+|Seh1.3 |Seh1.3_5       |SeaComplex.fasta       |Seh1  	|			|A|347,349      |0|10|0|
+
+|Sec13	|Sec13_1        |SeaComplex.fasta    	|Sec13  |	          	|D|1,1		|0|10|0|
+|Sec13	|Sec13_2        |SeaComplex.fasta    	|Sec13  |2PM7.pdb          	|D|2,158	|0|10|0|
+|Sec13	|Sec13_3        |SeaComplex.fasta    	|Sec13  |	          	|D|159,165	|0|10|0|
+|Sec13	|Sec13_4        |SeaComplex.fasta    	|Sec13  |2PM7.pdb          	|D|166,296	|0|10|0|
+|Sec13	|Sec13_5        |SeaComplex.fasta    	|Sec13  |			|D|297,297	|0|10|0|
+
+|SEA1 	|SEA1_1		|SeaComplex.fasta     	|SEA1   |			|A|1,100	|0|50|0|
+|SEA1 	|SEA1_2		|SeaComplex.fasta     	|SEA1   |SEA1_101-275.pdb	|A|101,275	|0|10|0|
+|SEA1 	|SEA1_3		|SeaComplex.fasta     	|SEA1   |			|A|276,278	|0|10|0|
+|SEA1 	|SEA1_4		|SeaComplex.fasta     	|SEA1   |SEA1_279-473.pdb	|A|279,331	|0|10|0|
+|SEA1 	|SEA1_5		|SeaComplex.fasta     	|SEA1   |			|A|332,343	|0|12|0|
+|SEA1 	|SEA1_6		|SeaComplex.fasta     	|SEA1   |SEA1_279-473.pdb	|A|344,376	|0|10|0|
+|SEA1 	|SEA1_7		|SeaComplex.fasta     	|SEA1   |			|A|377,399	|0|23|0|
+|SEA1 	|SEA1_8		|SeaComplex.fasta     	|SEA1   |SEA1_279-473.pdb	|A|400,473	|0|10|0|
+|SEA1 	|SEA1_901	|SeaComplex.fasta     	|SEA1   |			|A|474,526	|0|53|0|
+|SEA1 	|SEA1_902	|SeaComplex.fasta     	|SEA1   |			|A|527,859	|0|83|0|
+|SEA1 	|SEA1_903	|SeaComplex.fasta     	|SEA1   |			|A|860,1126	|0|89|0|
+|SEA1 	|SEA1_904	|SeaComplex.fasta     	|SEA1   |			|A|1127,1177	|0|51|0|
+|SEA1 	|SEA1_10	|SeaComplex.fasta     	|SEA1   |SEA1_1178-1273.pdb	|A|1178,1273	|0|10|0|
+|SEA1 	|SEA1_1001	|SeaComplex.fasta     	|SEA1   |			|A|1274,1340	|0|67|0|
+|SEA1 	|SEA1_1002	|SeaComplex.fasta     	|SEA1   |			|A|1341,1584	|0|81|0|
+
+|SEA2 	|SEA2_1		|SeaComplex.fasta     	|SEA2   |			|A|1,126	|0|63|0|
+|SEA2   |SEA2_2         |SeaComplex.fasta     	|SEA2   |SEA2_127-520.pdb       |A|127,172	|0|10|0|
+|SEA2 	|SEA2_3		|SeaComplex.fasta     	|SEA2   |			|A|173,200	|0|28|0|
+|SEA2   |SEA2_4         |SeaComplex.fasta     	|SEA2   |SEA2_127-520.pdb       |A|201,319	|0|10|0|
+|SEA2 	|SEA2_5		|SeaComplex.fasta     	|SEA2   |			|A|320,337	|0|18|0|
+|SEA2   |SEA2_6         |SeaComplex.fasta     	|SEA2   |SEA2_127-520.pdb       |A|338,403	|0|10|0|
+|SEA2 	|SEA2_7		|SeaComplex.fasta     	|SEA2   |			|A|404,433	|0|30|0|
+|SEA2   |SEA2_8         |SeaComplex.fasta     	|SEA2   |SEA2_127-520.pdb       |A|434,520	|0|10|0|
+|SEA2 	|SEA2_901	|SeaComplex.fasta     	|SEA2   |			|A|521,563	|0|43|0|
+|SEA2 	|SEA2_902	|SeaComplex.fasta     	|SEA2   |			|A|564,1155	|0|99|0|
+|SEA2 	|SEA2_903	|SeaComplex.fasta     	|SEA2   |			|A|1156,1279	|0|62|0|
+|SEA2   |SEA2_10        |SeaComplex.fasta     	|SEA2   |SEA2_1280-1341.pdb     |A|1280,1341	|0|10|0|
+
+|SEA3 	|SEA3_1		|SeaComplex.fasta     	|SEA3   |			|A|1,53	  	|0|53|0|
+|SEA3   |SEA3_2         |SeaComplex.fasta     	|SEA3   |SEA3_54-424.pdb	|A|54,278	|0|10|0|
+|SEA3 	|SEA3_3		|SeaComplex.fasta     	|SEA3   |			|A|279,289	|0|11|0|
+|SEA3   |SEA3_4         |SeaComplex.fasta     	|SEA3   |SEA3_54-424.pdb        |A|290,314	|0|10|0|
+|SEA3 	|SEA3_5		|SeaComplex.fasta     	|SEA3   |			|A|315,324	|0|10|0|
+|SEA3   |SEA3_6         |SeaComplex.fasta     	|SEA3   |SEA3_54-424.pdb        |A|325,344	|0|10|0|
+|SEA3 	|SEA3_7		|SeaComplex.fasta     	|SEA3   |			|A|345,389	|0|45|0|
+|SEA3   |SEA3_8         |SeaComplex.fasta     	|SEA3   |SEA3_54-424.pdb        |A|390,424	|0|10|0|
+|SEA3 	|SEA3_9		|SeaComplex.fasta     	|SEA3   |			|A|425,429	|0|10|0|
+|SEA3   |SEA3_10        |SeaComplex.fasta     	|SEA3   |SEA3_430-536.pdb	|A|430,536	|0|10|0|
+|SEA3 	|SEA3_1101	|SeaComplex.fasta     	|SEA3   |			|A|537,772	|0|79|0|
+|SEA3 	|SEA3_1102	|SeaComplex.fasta     	|SEA3   |			|A|773,878	|0|53|0|
+|SEA3 	|SEA3_1103	|SeaComplex.fasta     	|SEA3   |			|A|879,995	|0|59|0|
+|SEA3 	|SEA3_1104	|SeaComplex.fasta     	|SEA3   |			|A|996,1091	|0|96|0|
+|SEA3   |SEA3_12        |SeaComplex.fasta     	|SEA3   |SEA3_1092-1139.pdb	|A|1092,1139	|0|10|0|
+|SEA3 	|SEA3_13	|SeaComplex.fasta     	|SEA3   |			|A|1140,1148	|0|10|0|
+
+|SEA4.1	|SEA4.1_1	|SeaComplex.fasta     	|SEA4   |			|A|1,44		|0|44|0|
+|SEA4.1	|SEA4.1_2  	|SeaComplex.fasta     	|SEA4   |SEA4_45-426.pdb        |A|45,87	|0|10|0|
+|SEA4.1	|SEA4.1_3	|SeaComplex.fasta     	|SEA4   |			|A|88,123	|0|36|0|
+|SEA4.1	|SEA4.1_4  	|SeaComplex.fasta     	|SEA4   |SEA4_45-426.pdb        |A|124,130	|0|10|0|
+|SEA4.1	|SEA4.1_5	|SeaComplex.fasta     	|SEA4   |			|A|131,148	|0|18|0|
+|SEA4.1	|SEA4.1_6  	|SeaComplex.fasta     	|SEA4   |SEA4_45-426.pdb        |A|149,272	|0|10|0|
+|SEA4.1	|SEA4.1_7	|SeaComplex.fasta     	|SEA4   |			|A|273,284	|0|12|0|
+|SEA4.1	|SEA4.1_8  	|SeaComplex.fasta     	|SEA4   |SEA4_45-426.pdb        |A|285,333	|0|10|0|
+|SEA4.1	|SEA4.1_9	|SeaComplex.fasta     	|SEA4   |			|A|334,355	|0|22|0|
+|SEA4.1	|SEA4.1_10  	|SeaComplex.fasta     	|SEA4   |SEA4_45-426.pdb        |A|356,426	|0|10|0|
+|SEA4.1	|SEA4.1_1101	|SeaComplex.fasta     	|SEA4   |			|A|427,490	|0|64|0|
+|SEA4.1	|SEA4.1_1102	|SeaComplex.fasta     	|SEA4   |			|A|491,658	|0|84|0|
+|SEA4.1	|SEA4.1_12  	|SeaComplex.fasta     	|SEA4   |SEA4_659-835.pdb	|A|659,782	|0|10|0|
+|SEA4.1	|SEA4.1_13	|SeaComplex.fasta     	|SEA4   |			|A|783,808	|0|26|0|
+|SEA4.1	|SEA4.1_14 	|SeaComplex.fasta     	|SEA4   |SEA4_659-835.pdb	|A|809,835	|0|10|0|
+|SEA4.1	|SEA4.1_15	|SeaComplex.fasta     	|SEA4   |			|A|836,941	|0|53|0|
+|SEA4.1	|SEA4.1_16  	|SeaComplex.fasta     	|SEA4   |SEA4_942-1032.pdb	|A|942,963	|0|10|0|
+|SEA4.1	|SEA4.1_17	|SeaComplex.fasta     	|SEA4   |			|A|964,999	|0|36|0|
+|SEA4.1	|SEA4.1_18  	|SeaComplex.fasta     	|SEA4   |SEA4_942-1032.pdb	|A|1000,1032	|0|10|0|
+|SEA4.1	|SEA4.1_19	|SeaComplex.fasta     	|SEA4   |			|A|1033,1038	|0|10|0|
+
+|SEA4.2 |SEA4.2_1       |SeaComplex.fasta       |SEA4   |			|A|1,44      	|0|44|0|
+|SEA4.2 |SEA4.2_2       |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|45,87       	|0|10|0|
+|SEA4.2 |SEA4.2_3       |SeaComplex.fasta       |SEA4   |			|A|88,123      	|0|36|0|
+|SEA4.2 |SEA4.2_4       |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|124,130      |0|10|0|
+|SEA4.2 |SEA4.2_5       |SeaComplex.fasta       |SEA4   |			|A|131,148      |0|18|0|
+|SEA4.2 |SEA4.2_6       |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|149,272      |0|10|0|
+|SEA4.2 |SEA4.2_7       |SeaComplex.fasta       |SEA4   |			|A|273,284      |0|12|0|
+|SEA4.2 |SEA4.2_8       |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|285,333      |0|10|0|
+|SEA4.2 |SEA4.2_9       |SeaComplex.fasta       |SEA4   |			|A|334,355      |0|22|0|
+|SEA4.2 |SEA4.2_10      |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|356,426      |0|10|0|
+|SEA4.2 |SEA4.2_1101    |SeaComplex.fasta       |SEA4   |			|A|427,490      |0|64|0|
+|SEA4.2 |SEA4.2_1102    |SeaComplex.fasta       |SEA4   |			|A|491,658      |0|84|0|
+|SEA4.2 |SEA4.2_12      |SeaComplex.fasta       |SEA4   |SEA4_659-835.pdb       |A|659,782      |0|10|0|
+|SEA4.2 |SEA4.2_13      |SeaComplex.fasta       |SEA4   |			|A|783,808      |0|26|0|
+|SEA4.2 |SEA4.2_14      |SeaComplex.fasta       |SEA4   |SEA4_659-835.pdb       |A|809,835      |0|10|0|
+|SEA4.2 |SEA4.2_15      |SeaComplex.fasta       |SEA4   |			|A|836,941      |0|53|0|
+|SEA4.2 |SEA4.2_16      |SeaComplex.fasta       |SEA4   |SEA4_942-1032.pdb      |A|942,963      |0|10|0|
+|SEA4.2 |SEA4.2_17      |SeaComplex.fasta       |SEA4   |			|A|964,999     	|0|36|0|
+|SEA4.2 |SEA4.2_18      |SeaComplex.fasta       |SEA4   |SEA4_942-1032.pdb      |A|1000,1032    |0|10|0|
+|SEA4.2 |SEA4.2_19      |SeaComplex.fasta       |SEA4   |			|A|1033,1038    |0|10|0|
+
+|SEA4.3 |SEA4.3_1       |SeaComplex.fasta       |SEA4   |			|A|1,44		|0|44|0|
+|SEA4.3 |SEA4.3_2       |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|45,87	|0|10|0|
+|SEA4.3 |SEA4.3_3       |SeaComplex.fasta       |SEA4   |			|A|88,123	|0|36|0|
+|SEA4.3 |SEA4.3_4       |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|124,130	|0|10|0|
+|SEA4.3 |SEA4.3_5       |SeaComplex.fasta       |SEA4   |			|A|131,148	|0|18|0|
+|SEA4.3 |SEA4.3_6       |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|149,272	|0|10|0|
+|SEA4.3 |SEA4.3_7       |SeaComplex.fasta       |SEA4   |			|A|273,284	|0|12|0|
+|SEA4.3 |SEA4.3_8       |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|285,333	|0|10|0|
+|SEA4.3 |SEA4.3_9       |SeaComplex.fasta       |SEA4   |			|A|334,355	|0|22|0|
+|SEA4.3 |SEA4.3_10      |SeaComplex.fasta       |SEA4   |SEA4_45-426.pdb        |A|356,426	|0|10|0|
+|SEA4.3 |SEA4.3_1101    |SeaComplex.fasta       |SEA4   |			|A|427,490	|0|64|0|
+|SEA4.3 |SEA4.3_1102    |SeaComplex.fasta       |SEA4   |			|A|491,658	|0|84|0|
+|SEA4.3 |SEA4.3_12      |SeaComplex.fasta       |SEA4   |SEA4_659-835.pdb       |A|659,782	|0|10|0|
+|SEA4.3 |SEA4.3_13      |SeaComplex.fasta       |SEA4   |			|A|783,808	|0|26|0|
+|SEA4.3 |SEA4.3_14      |SeaComplex.fasta       |SEA4   |SEA4_659-835.pdb       |A|809,835	|0|10|0|
+|SEA4.3 |SEA4.3_15      |SeaComplex.fasta       |SEA4   |			|A|836,941	|0|53|0|
+|SEA4.3 |SEA4.3_16      |SeaComplex.fasta       |SEA4   |SEA4_942-1032.pdb      |A|942,963	|0|10|0|
+|SEA4.3 |SEA4.3_17      |SeaComplex.fasta       |SEA4   |			|A|964,999	|0|36|0|
+|SEA4.3 |SEA4.3_18      |SeaComplex.fasta       |SEA4   |SEA4_942-1032.pdb      |A|1000,1032	|0|10|0|
+|SEA4.3 |SEA4.3_19      |SeaComplex.fasta       |SEA4   |			|A|1033,1038	|0|10|0|
+

@@ -1,0 +1,80 @@
+Npr2 kmeans_10_3/cluster.0/ average centroid distance 57.3538290619
+Npr2 kmeans_10_3/cluster.0/ centroid index 0
+Npr2 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+Npr2 kmeans_10_3/cluster.0/ median centroid distance  57.3538290619
+Npr2 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 57.3538290619
+Npr3 kmeans_10_3/cluster.0/ average centroid distance 31.6798672571
+Npr3 kmeans_10_3/cluster.0/ centroid index 0
+Npr3 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+Npr3 kmeans_10_3/cluster.0/ median centroid distance  31.6798672571
+Npr3 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 31.6798672571
+Sec13 kmeans_10_3/cluster.0/ average centroid distance 40.1624595332
+Sec13 kmeans_10_3/cluster.0/ centroid index 0
+Sec13 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+Sec13 kmeans_10_3/cluster.0/ median centroid distance  40.1624595332
+Sec13 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 40.1624595332
+Seh1.1 kmeans_10_3/cluster.0/ average centroid distance 37.5508391395
+Seh1.1 kmeans_10_3/cluster.0/ centroid index 0
+Seh1.1 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+Seh1.1 kmeans_10_3/cluster.0/ median centroid distance  37.5508391395
+Seh1.1 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 37.5508391395
+Seh1.3 kmeans_10_3/cluster.0/ average centroid distance 51.7883583088
+Seh1.3 kmeans_10_3/cluster.0/ centroid index 0
+Seh1.3 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+Seh1.3 kmeans_10_3/cluster.0/ median centroid distance  51.7883583088
+Seh1.3 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 51.7883583088
+Seh1.2 kmeans_10_3/cluster.0/ average centroid distance 54.972426447
+Seh1.2 kmeans_10_3/cluster.0/ centroid index 0
+Seh1.2 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+Seh1.2 kmeans_10_3/cluster.0/ median centroid distance  54.972426447
+Seh1.2 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 54.972426447
+Whole kmeans_10_3/cluster.0/ average centroid distance 54.6664248134
+Whole kmeans_10_3/cluster.0/ centroid index 0
+Whole kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+Whole kmeans_10_3/cluster.0/ median centroid distance  54.6664248134
+Whole kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 54.6664248134
+All kmeans_10_3/cluster.0/ average centroid distance 54.6664248134
+All kmeans_10_3/cluster.0/ centroid index 0
+All kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+All kmeans_10_3/cluster.0/ median centroid distance  54.6664248134
+All kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 54.6664248134
+Seh1.A kmeans_10_3/cluster.0/ average centroid distance 48.7068571837
+Seh1.A kmeans_10_3/cluster.0/ centroid index 0
+Seh1.A kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+Seh1.A kmeans_10_3/cluster.0/ median centroid distance  48.7068571837
+Seh1.A kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 48.7068571837
+SEA3 kmeans_10_3/cluster.0/ average centroid distance 33.1476625574
+SEA3 kmeans_10_3/cluster.0/ centroid index 0
+SEA3 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+SEA3 kmeans_10_3/cluster.0/ median centroid distance  33.1476625574
+SEA3 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 33.1476625574
+SEA2 kmeans_10_3/cluster.0/ average centroid distance 38.6032773125
+SEA2 kmeans_10_3/cluster.0/ centroid index 0
+SEA2 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+SEA2 kmeans_10_3/cluster.0/ median centroid distance  38.6032773125
+SEA2 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 38.6032773125
+SEA1 kmeans_10_3/cluster.0/ average centroid distance 57.9461755715
+SEA1 kmeans_10_3/cluster.0/ centroid index 0
+SEA1 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+SEA1 kmeans_10_3/cluster.0/ median centroid distance  57.9461755715
+SEA1 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 57.9461755715
+SEA4.3 kmeans_10_3/cluster.0/ average centroid distance 38.2514223113
+SEA4.3 kmeans_10_3/cluster.0/ centroid index 0
+SEA4.3 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+SEA4.3 kmeans_10_3/cluster.0/ median centroid distance  38.2514223113
+SEA4.3 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 38.2514223113
+SEA4.2 kmeans_10_3/cluster.0/ average centroid distance 90.7930187726
+SEA4.2 kmeans_10_3/cluster.0/ centroid index 0
+SEA4.2 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+SEA4.2 kmeans_10_3/cluster.0/ median centroid distance  90.7930187726
+SEA4.2 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 90.7930187726
+SEA4.1 kmeans_10_3/cluster.0/ average centroid distance 67.6299048581
+SEA4.1 kmeans_10_3/cluster.0/ centroid index 0
+SEA4.1 kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+SEA4.1 kmeans_10_3/cluster.0/ median centroid distance  67.6299048581
+SEA4.1 kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 67.6299048581
+SEA4.A kmeans_10_3/cluster.0/ average centroid distance 68.9935929339
+SEA4.A kmeans_10_3/cluster.0/ centroid index 0
+SEA4.A kmeans_10_3/cluster.0/ centroid rmf name ('kmeans_10_3/cluster.0/0-0_2.rmf3', 0)
+SEA4.A kmeans_10_3/cluster.0/ median centroid distance  68.9935929339
+SEA4.A kmeans_10_3/cluster.0/ kmeans_10_3/cluster.0/ average pairwise distance 68.9935929339

@@ -1,0 +1,39 @@
+#!/usr/bin/bash
+
+rm Random_Models_H1.dat Random_Models_H2.dat
+rm Cluster_*.txt
+
+norm1=0
+norm2=0
+
+i=0
+for j in `seq 0 4`; 
+do
+    ls -1v ./all_models.999/${i}_${j}.rmf3 | awk 'BEGIN{FS="/"}{print $3}' >> Random_Models_H1.dat
+    if [ -f ./all_models.999/${i}_${j}.rmf3 ]
+    then
+	(( norm1++ ))
+    fi
+done
+
+i=1
+for j in `seq 0 4`; 
+do
+    ls -1v ./all_models.999/${i}_${j}.rmf3 | awk 'BEGIN{FS="/"}{print $3}' >> Random_Models_H2.dat
+    if [ -f ./all_models.999/${i}_${j}.rmf3 ]
+    then
+	(( norm2++ ))
+    fi
+done
+
+echo $norm1, $norm2
+
+i=$1
+for j in `seq 0 $(($i-1))`; 
+do 
+    echo \
+	`while read p; do find ./kmeans_10_${i}/cluster.${j} -name *-${p}; done < Random_Models_H1.dat | awk 'BEGIN{FS="/"}{print $3}' | awk 'BEGIN{FS="."}{print $2}' | sort | uniq -c | awk '{print $1 / 5}'` \
+	`while read p; do find ./kmeans_10_${i}/cluster.${j} -name *-${p}; done < Random_Models_H2.dat | awk 'BEGIN{FS="/"}{print $3}' | awk 'BEGIN{FS="."}{print $2}' | sort | uniq -c | awk '{print $1 / 5}'` \
+	>> Cluster_${i}.txt
+done
+

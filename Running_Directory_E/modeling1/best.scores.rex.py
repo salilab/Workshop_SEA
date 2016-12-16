@@ -1,0 +1,1 @@
+self.best_score_list=[3275.4342690272633]
