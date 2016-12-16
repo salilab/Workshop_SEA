@@ -1356,7 +1356,8 @@ class AnalysisReplicaExchange0(object):
                         density_custom_ranges,
                         voxel=voxel_size)
 
-                dircluster=os.path.join(outputdir,"all_models."+str(n))
+                dircluster=os.path.join(outputdir,
+                               "all_models.%d" % number_of_best_scoring_models)
                 try:
                     os.mkdir(outputdir)
                 except:
