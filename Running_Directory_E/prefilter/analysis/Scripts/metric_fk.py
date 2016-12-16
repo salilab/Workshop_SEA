@@ -1,6 +1,6 @@
 import sys, os, os.path
 import math
-from math import log, sqrt 
+from math import log, sqrt
 import glob
 import numpy as np
 import IMP
@@ -66,7 +66,7 @@ def get_alphak(alpha_kminus1,k,ndof):
     elif k>2:
         alpha_k=alpha_kminus1+(1-alpha_kminus1)/6.0
     return alpha_k
-        
+
 total_num_clusters=int(sys.argv[1]) # e.g. kmeans 1 through 8 will be 8
 path0=sys.argv[2]
 component=sys.argv[3]
@@ -83,12 +83,12 @@ for k in range(1,total_num_clusters+1):
 
     if k==1:
         a_k_list.append(1-0.75/ndof)
-        s_k_list.append(s_k)    
+        s_k_list.append(s_k)
         print k, 1-0.75/ndof, 1
         continue
     else:
         a_k = get_alphak(a_k_list[-1],k,ndof)
         a_k_list.append(a_k)
         print k, a_k, s_k/(a_k*s_k_list[-1])
-        s_k_list.append(s_k)    
+        s_k_list.append(s_k)
         continue

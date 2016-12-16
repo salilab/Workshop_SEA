@@ -638,7 +638,7 @@ class BuildModel1(object):
         @param data_structure List of lists containing these entries:
              comp_name, hier_name, color, fasta_file, fasta_id, pdb_name, chain_id,
              res_range, read_em_files, bead_size, rb, super_rb,
-             em_num_components, em_txt_file_name, em_mrc_file_name, chain_of_super_rb, 
+             em_num_components, em_txt_file_name, em_mrc_file_name, chain_of_super_rb,
              keep_gaussian_flexible_beads (optional)
         @param sequence_connectivity_scale
         @param rmf_file
@@ -1044,7 +1044,7 @@ class AnalysisReplicaExchange0(object):
                  global_output_directory="output/",
                  replica_stat_file_suffix="stat_replica",
                  global_analysis_result_directory="./analysis/",
-		 top_k_per_run=False):
+                 top_k_per_run=False):
         """Constructor.
            @param model                           The IMP model
            @param stat_file_name_suffix
@@ -1072,12 +1072,12 @@ class AnalysisReplicaExchange0(object):
         self.stat_files = []
         # it contains the position of the root directories
 
-	if not top_k_per_run:
-        	for rd in merge_directories:
-            		stat_files = glob.glob(os.path.join(rd,stat_dir,"stat.*.out"))
-            		if len(stat_files)==0:
-                		print("WARNING: no stat files found in",os.path.join(rd,stat_dir))
-            		self.stat_files += stat_files
+        if not top_k_per_run:
+            for rd in merge_directories:
+                stat_files = glob.glob(os.path.join(rd,stat_dir,"stat.*.out"))
+                if len(stat_files)==0:
+                    print("WARNING: no stat files found in",os.path.join(rd,stat_dir))
+                self.stat_files += stat_files
 
 
     def get_modeling_trajectory(self,
@@ -1652,7 +1652,7 @@ class AnalysisReplicaExchange0(object):
                    feature_keys=[],
                    outputdir="./",
                    rmfsdir="./", #directory where the RMFs reside
-	           alignment_components=None,
+                   alignment_components=None,
                    number_of_best_scoring_models=1000,
                    rmsd_calculation_components=None,
                    distance_matrix_file='distances.mat',
@@ -1712,9 +1712,9 @@ class AnalysisReplicaExchange0(object):
         if not load_distance_matrix_file:
             rmf_file_list=glob.glob(rmfsdir+'/*.rmf3')
             rmf_file_frame_list=[0 for i in range(len(rmf_file_list))]
-	    score_list=[1.0 for i in range(len(rmf_file_list))]
-	    feature_keyword_list_dict={} 
- 
+            score_list=[1.0 for i in range(len(rmf_file_list))]
+            feature_keyword_list_dict={}
+
 # ------------------------------------------------------------------------
 # collect all the files and scores
 # ------------------------------------------------------------------------
@@ -1727,8 +1727,8 @@ class AnalysisReplicaExchange0(object):
                 for k in feature_keyword_list_dict:
                     feature_keyword_list_dict[k] = IMP.pmi.tools.scatter_and_gather(
                         feature_keyword_list_dict[k])
-            
-	    # sort by score and get the best scoring ones
+
+            # sort by score and get the best scoring ones
             score_rmf_tuples = list(zip(score_list,
                                    rmf_file_list,
                                    rmf_file_frame_list,
@@ -1744,7 +1744,7 @@ class AnalysisReplicaExchange0(object):
                                            key=lambda x: float(x[0]))[:number_of_best_scoring_models]
             best_score_rmf_tuples=[t+(n,) for n,t in enumerate(best_score_rmf_tuples)]
 
-	    # sort the feature scores in the same way
+            # sort the feature scores in the same way
             best_score_feature_keyword_list_dict = defaultdict(list)
             for tpl in best_score_rmf_tuples:
                 index = tpl[3]
@@ -1756,13 +1756,13 @@ class AnalysisReplicaExchange0(object):
                 best_score_rmf_tuples,
                 self.number_of_processes)[self.rank]
 
-            	
+
             # expand the dictionaries to include ambiguous copies
             prot_ahead = IMP.pmi.analysis.get_hiers_from_rmf(self.model,
                                                              0,
                                                              my_best_score_rmf_tuples[0][1])[0]
             if IMP.pmi.get_is_canonical(prot_ahead):
-		if rmsd_calculation_components is not None:
+                if rmsd_calculation_components is not None:
                     tmp = self._expand_ambiguity(prot_ahead,rmsd_calculation_components)
                     if tmp!=rmsd_calculation_components:
                         print('Detected ambiguity, expand rmsd components to',tmp)
@@ -1772,7 +1772,7 @@ class AnalysisReplicaExchange0(object):
                     if tmp!=alignment_components:
                         print('Detected ambiguity, expand alignment components to',tmp)
                         alignment_components = tmp
-            
+
 #-------------------------------------------------------------
 # read the coordinates
 # ------------------------------------------------------------
@@ -1786,7 +1786,7 @@ class AnalysisReplicaExchange0(object):
                                                              rmsd_calculation_components,
                                                              state_number=state_number)
             #for crd in got_coords:
-	    #	print(crd)
+            #   print(crd)
             # note! the coordinates are simply float tuples, NOT decorators, NOT Vector3D,
             # NOR particles, because these object cannot be serialized. We need serialization
             # for the parallel computation based on mpi.
@@ -1878,7 +1878,7 @@ class AnalysisReplicaExchange0(object):
                     o=IMP.pmi.output.Output()
                     out_pdb_fn=os.path.join(dircluster,str(cnt)+"."+str(self.rank)+".pdb")
                     out_rmf_fn=os.path.join(dircluster,str(cnt)+"."+str(self.rank)+".rmf3")
-                
+
                     o.init_pdb(out_pdb_fn,prot)
                     o.write_pdb(out_pdb_fn,
                                 translate_to_geometric_center=write_pdb_with_centered_coordinates)

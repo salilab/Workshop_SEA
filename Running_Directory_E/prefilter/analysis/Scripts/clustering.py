@@ -76,22 +76,22 @@ reduced_density_dict={"SEA1":["SEA1"],
                       "SEA4.1":["SEA4.1"],
                       "SEA4.2":["SEA4.2"],
                       "SEA4.3":["SEA4.3"],
-                      
+
                       "Npr2":["Npr2"],
                       "Npr3":["Npr3"],
                       "Sec13":["Sec13"],
                       "Seh1.1":["Seh1.1"],
                       "Seh1.2":["Seh1.2"],
                       "Seh1.3":["Seh1.3"],
-                      
+
                       "SEA4.A":["SEA4.1", "SEA4.2", "SEA4.3"],
                       "Seh1.A":["Seh1.1", "Seh1.2", "Seh1.3"],
 
-                      "Whole":["SEA1", "SEA2", "SEA3", 
-                               "Npr2", "Npr3", "Sec13", 
-                               "SEA4.1", "SEA4.2", "SEA4.3", 
+                      "Whole":["SEA1", "SEA2", "SEA3",
+                               "Npr2", "Npr3", "Sec13",
+                               "SEA4.1", "SEA4.2", "SEA4.3",
                                "Seh1.1", "Seh1.2", "Seh1.3"]
-                      }        
+                      }
 # list of component names needed to calculate the RMSD for the clustering
 components_names_a={"SEA4.1_A":"SEA4.1",
                     "SEA4.2_A":"SEA4.2",
@@ -113,21 +113,21 @@ components_names_r={"SEA1":"SEA1",
                     "Seh1.3_A":"Seh1.3",
                     }
 
-mc.clustering_rmfs_no_stat("SimplifiedModel_Total_Score_None", 
-                           "rmf_file",   
+mc.clustering_rmfs_no_stat("SimplifiedModel_Total_Score_None",
+                           "rmf_file",
                            "rmf_frame_index",
                            rmfsdir="./all_models.999",
                            alignment_components=components_names_r,
                            number_of_best_scoring_models=nbestscoringmodels,
                            rmsd_calculation_components=components_names_r,
-                           outputdir="kmeans_"+str(nbestscoringmodels)+"_"+str(nclusters)+"/", 
+                           outputdir="kmeans_"+str(nbestscoringmodels)+"_"+str(nclusters)+"/",
                            feature_keys=feature_list,
                            load_distance_matrix_file=load_distance_matrix_file,
                            skip_clustering=False,
-                           display_plot=True,    
+                           display_plot=True,
                            exit_after_display=False,
-                           get_every=1,             
+                           get_every=1,
                            number_of_clusters=nclusters,
-                           voxel_size=5.0,               
+                           voxel_size=5.0,
                            density_custom_ranges=reduced_density_dict
                            )

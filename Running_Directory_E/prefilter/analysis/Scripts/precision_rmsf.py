@@ -50,22 +50,22 @@ selection_dictionary={
     "SEA4.1":["SEA4.1"],
     "SEA4.2":["SEA4.2"],
     "SEA4.3":["SEA4.3"],
-    
+
     "Npr2":["Npr2"],
     "Npr3":["Npr3"],
     "Sec13":["Sec13"],
     "Seh1.1":["Seh1.1"],
     "Seh1.2":["Seh1.2"],
     "Seh1.3":["Seh1.3"],
-    
+
     "SEA4.A":["SEA4.1", "SEA4.2", "SEA4.3"],
     "Seh1.A":["Seh1.1", "Seh1.2", "Seh1.3"],
-    
-    "Whole":["SEA1", "SEA2", "SEA3", 
-             "Npr2", "Npr3", "Sec13", 
-             "SEA4.1", "SEA4.2", "SEA4.3", 
-             "Seh1.1", "Seh1.2", "Seh1.3"]    
-    }      
+
+    "Whole":["SEA1", "SEA2", "SEA3",
+             "Npr2", "Npr3", "Sec13",
+             "SEA4.1", "SEA4.2", "SEA4.3",
+             "Seh1.1", "Seh1.2", "Seh1.3"]
+    }
 
 #####################################################################
 # don't change anything below
@@ -75,16 +75,16 @@ frames=[]
 clusterdirectories=glob.glob(root_cluster_directory+'/cluster.*/')
 
 if test_mode:
-  # runs on the first 10 structures to test if it runs smoothly
-  for clusterdirectory in clusterdirectories:
-      rmfs.append(glob.glob(clusterdirectory+'/*.rmf3')[0::3])
-      #rmfs.append(glob.glob(clusterdirectory+'/*.rmf3')[0::10])
-      frames.append([0]*len(rmfs[-1]))
+    # runs on the first 10 structures to test if it runs smoothly
+    for clusterdirectory in clusterdirectories:
+        rmfs.append(glob.glob(clusterdirectory+'/*.rmf3')[0::3])
+        #rmfs.append(glob.glob(clusterdirectory+'/*.rmf3')[0::10])
+        frames.append([0]*len(rmfs[-1]))
 else:
-  for clusterdirectory in clusterdirectories:
-      rmfs.append(glob.glob(clusterdirectory+'/*.rmf3')[0::1])
-      frames.append([0]*len(rmfs[-1]))
- 
+    for clusterdirectory in clusterdirectories:
+        rmfs.append(glob.glob(clusterdirectory+'/*.rmf3')[0::1])
+        frames.append([0]*len(rmfs[-1]))
+
 model=IMP.Model()
 pr=IMP.pmi.analysis.Precision(model, resolution=1, selection_dictionary=selection_dictionary)
 pr.set_precision_style('pairwise_rmsd')
@@ -110,4 +110,3 @@ for n in range(len(rmfs)):
                 #is_mpi=is_mpi,
                 skip=1)
     #pr.get_rmsf(clusterdirectories[n],clusterdirectories[n]+"/",is_mpi=is_mpi,skip=1,set_plot_yaxis_range=(0,100.0))
-
