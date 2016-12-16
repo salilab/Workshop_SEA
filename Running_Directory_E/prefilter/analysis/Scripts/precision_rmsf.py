@@ -1,3 +1,4 @@
+from __future__ import print_function
 import IMP
 import IMP.pmi
 import IMP.pmi.analysis
@@ -33,7 +34,7 @@ if (inputs.is_mpi=="True") or (inputs.is_mpi=="true") or (inputs.is_mpi=="Yes") 
     inputs.is_mpi = True
 else:
     inputs.is_mpi = False
-print inputs
+print(inputs)
 
 test_mode = inputs.test_mode
 root_cluster_directory = inputs.root_cluster_directory

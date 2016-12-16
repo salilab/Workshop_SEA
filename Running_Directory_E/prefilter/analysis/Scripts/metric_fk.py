@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys, os, os.path
 import math
 from math import log, sqrt
@@ -84,11 +85,11 @@ for k in range(1,total_num_clusters+1):
     if k==1:
         a_k_list.append(1-0.75/ndof)
         s_k_list.append(s_k)
-        print k, 1-0.75/ndof, 1
+        print(k, 1-0.75/ndof, 1)
         continue
     else:
         a_k = get_alphak(a_k_list[-1],k,ndof)
         a_k_list.append(a_k)
-        print k, a_k, s_k/(a_k*s_k_list[-1])
+        print(k, a_k, s_k/(a_k*s_k_list[-1]))
         s_k_list.append(s_k)
         continue

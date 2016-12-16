@@ -1,3 +1,4 @@
+from __future__ import print_function
 import IMP
 import IMP.pmi
 import macros_e29
@@ -40,7 +41,7 @@ if inputs.nclusters==None:
 if inputs.prefiltervalue==None:
     inputs.prefiltervalue = 565.0
 
-print inputs
+print(inputs)
 
 is_mpi = inputs.is_mpi                                          # mpi enabled
 load_distance_matrix_file = inputs.load_distance_matrix_file    # skip the matrix calcuklation and read the precalculated matrix
