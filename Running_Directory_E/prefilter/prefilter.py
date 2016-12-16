@@ -1,3 +1,4 @@
+from __future__ import print_function
 import IMP
 import IMP.pmi
 import sys,os
@@ -29,13 +30,13 @@ if inputs.prefiltervalue==None:
     inputs.prefiltervalue = 565.0
 if inputs.is_dir==None:
     exit
-print inputs
+print(inputs)
 
-is_mpi = inputs.is_mpi                                      
+is_mpi = inputs.is_mpi
 load_distance_matrix_file = inputs.load_distance_matrix_file
-nbestscoringmodels = int(inputs.nbestscoringmodels)         
-nclusters = int(inputs.nclusters)                           
-prefiltervalue = float(inputs.prefiltervalue)               
+nbestscoringmodels = int(inputs.nbestscoringmodels)
+nclusters = int(inputs.nclusters)
+prefiltervalue = float(inputs.prefiltervalue)
 is_dir = inputs.is_dir
 
 import macros_sea
@@ -43,7 +44,7 @@ model=IMP.Model()
 
 print(is_dir)
 mergedirectories= []
-mergedirectories.append(is_dir)    
+mergedirectories.append(is_dir)
 mc=macros_sea.AnalysisReplicaExchange0(model,
                                        stat_file_name_suffix="stat",     # don't change
                                        merge_directories=mergedirectories,
@@ -57,20 +58,20 @@ feature_list = ["SimplifiedModel_Total_Score_None",
                 "CrossLinkingMassSpectrometryRestraint_Linear_Score_SeaComplex",
                 "CrossLinkingMassSpectrometryRestraint_PriorPsi_Score_SeaComplex",
                 "CrossLinkingMassSpectrometryRestraint_PriorSig_Score_SeaComplex 0.0",
-                "CrossLinkingMassSpectrometryRestraint_Distance_"    
+                "CrossLinkingMassSpectrometryRestraint_Distance_"
 ]
 
-mc.clustering("SimplifiedModel_Total_Score_None",  
-              "rmf_file",                          
-              "rmf_frame_index",                  
+mc.clustering("SimplifiedModel_Total_Score_None",
+              "rmf_file",
+              "rmf_frame_index",
               rmsd_calculation_components=None,
               alignment_components=None,
               number_of_clusters=nclusters,
               feature_keys = feature_list,
-              prefiltervalue=prefiltervalue,          
+              prefiltervalue=prefiltervalue,
               number_of_best_scoring_models=nbestscoringmodels,
               distance_matrix_file=None,
-              outputdir="kmeans_"+str(nbestscoringmodels)+"_"+is_dir.split("/")[-1]+"/", 
+              outputdir="kmeans_"+str(nbestscoringmodels)+"_"+is_dir.split("/")[-1]+"/",
               skip_clustering=True,
               get_every=1
               )
