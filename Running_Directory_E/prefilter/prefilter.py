@@ -6,12 +6,12 @@ import glob
 import argparse
 
 parser = argparse.ArgumentParser(description='generate clusters of the RMF solutions')
-parser.add_argument('-mpi', action="store", dest="is_mpi", help="mpi enabled")
-parser.add_argument('-preload', action="store", dest="load_distance_matrix_file", help="skip the matrix calcuklation and read the precalculated matrix")
-parser.add_argument('-nmods', action="store", dest="nbestscoringmodels", help="number of models to be clustered")
-parser.add_argument('-nclusters', action="store", dest="nclusters", help="number of clusters to be used by kmeans algorithm")
-parser.add_argument('-prefilter', action="store", dest="prefiltervalue", help="prefilter the models by score")
-parser.add_argument('-dir', action="store", dest="is_dir", help="input directory")
+parser.add_argument('--mpi', action="store", dest="is_mpi", help="mpi enabled")
+parser.add_argument('--preload', action="store", dest="load_distance_matrix_file", help="skip the matrix calcuklation and read the precalculated matrix")
+parser.add_argument('--nmods', action="store", dest="nbestscoringmodels", help="number of models to be clustered")
+parser.add_argument('--nclusters', action="store", dest="nclusters", help="number of clusters to be used by kmeans algorithm")
+parser.add_argument('--prefilter', action="store", dest="prefiltervalue", help="prefilter the models by score")
+parser.add_argument('--dir', action="store", dest="is_dir", help="input directory")
 inputs = parser.parse_args()
 
 if (inputs.is_mpi=="True") or (inputs.is_mpi=="true") or (inputs.is_mpi=="Yes") or (inputs.is_mpi=="yes") :
